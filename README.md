@@ -4,6 +4,10 @@ An AI safety layer that evaluates proposed financial actions **before money move
 
 NovaTech Pvt Ltd is a **synthetic company**. This MVP never talks to a real bank. All transactions, vendors, and evaluation metrics are clearly synthetic.
 
+## Why it is required??
+AI agents can increasingly initiate financial actions, but financial decisions require stronger controls than ordinary software actions.
+Payment Guardian adds a defense layer that verifies evidence, applies deterministic policies and risk signals, simulates financial impact, and keeps a human responsible for the final decision.
+
 **AI recommends — humans decide. No autonomous money movement.**
 
 ```
@@ -166,9 +170,9 @@ cd backend
 mvn test
 ```
 
-## What is NOT in this MVP
+## Limitations
 
-- Real bank or Razorpay production integration
+- Real bank production integration
 - Autonomous payment execution
 - Live LLM (set `OPENAI_API_KEY` for future Spring AI wiring; chat uses structured fallback today)
 - JWT auth / pgvector
