@@ -1,0 +1,11 @@
+target/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+frontend/node_modules/
+frontend/dist/
+data/out/
+.env
+*.log

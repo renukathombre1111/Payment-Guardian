@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: payment-guardian-db
+    environment:
+      POSTGRES_DB: paymentguardian
+      POSTGRES_USER: guardian
+      POSTGRES_PASSWORD: guardian
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
