@@ -1,4 +1,4 @@
-# Payment Guardian
+# Payment Guardian — The Autonomous Payment Trust Layer
 
 An AI safety layer that evaluates proposed financial actions **before money moves**.
 
